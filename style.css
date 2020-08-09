@@ -22,20 +22,38 @@ header{
 .logo{
     margin-left: 150px;
     padding-top: 20px;
-    width: 32%;
+    width: 24%;
 
 }
+
  .search{
      padding-top: 30px;
-     width: 32%;
+     width: 24%;
 
  }
 
  .login{
      padding-left: 50px;
-     width: 32%;
+     width: 24%;
      padding-top: 20px;
+     text-align: right;
  }
+
+ .toggle{
+    align-content: center;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    }
+
+.hidden-toggle{
+    width: 23%;
+    display: none;
+    margin: auto;
+    padding: 20px;
+
+}
 
 input{
     width: 250px;
@@ -165,6 +183,19 @@ i{
     margin-left: 150px;
     width: 74%;
 }
+
+.link{
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.link li{
+    display: inline-block;
+    text-align: center;
+}
+
 .left ul li{
     display: inline-block;
     padding: 0 25px;
@@ -197,21 +228,20 @@ h5 a{
     header{
         display: block;
    }
-
-   .login{
-       width: 100%;
-       margin-left: 0;
-   }
-
    .search{
        width: 100%;
        text-align: center;
    }
    .login{
+       /* display: none; */
        width: 100%;
        margin-right: 0;
        text-align: center;
    }
+
+   .hidden-toggle{
+    display: block;
+} 
 
     .bar{
         display: block;
@@ -221,6 +251,8 @@ h5 a{
         width: 100%;
         margin-left: 0;
     }
+    
+
     .request{
         width: 100%;
         margin-top: 20px;
@@ -251,10 +283,16 @@ h5 a{
         width: 100%;
         margin-left: 0;
     }
+
+    .link li{
+        width: 100%;
+    }
+
     .right{
         width: 100%;
         margin-right: 0;
         text-align: center;
+        padding-bottom: 20px;
     }
     
 }
