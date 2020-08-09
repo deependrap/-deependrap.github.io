@@ -15,24 +15,25 @@ ul{
 header{
     width: 100%;
     background-color: #7DD9E8;
+    display: flex;
+    justify-content: space-between;
 }
 
-header .logo{
+.logo{
     margin-left: 150px;
     padding-top: 20px;
-    flex: 2;
+    width: 32%;
 
 }
- header .search{
-     left: 550px;
+ .search{
      padding-top: 30px;
-     flex: 2;
+     width: 32%;
 
  }
 
- header .login{
+ .login{
      padding-left: 50px;
-     flex: 1;
+     width: 32%;
      padding-top: 20px;
  }
 
@@ -63,13 +64,15 @@ i{
 }
 
 .bar{
+    display: flex;
     width: 100%;
     background-color: #F5F5F5;
+    display: flex;
+    padding: 20px;
 }
 
-.bar .nav{
-    flex: 2;
-    align-items: center;
+.nav{
+    width: 65%;
     margin-left: 150px;
 
 }
@@ -87,28 +90,34 @@ i{
 }
 
 
-.bar .request{
-    flex: 1;
+.request{
+    width: 32%;
+    margin-right: 150px;
+    text-align: right;
 
 }
 
 .main{
+    display: flex;
     width: 100%;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .column1{
-    flex: 1;
+    width: 24%;
     margin-left: 150px;
     padding: 10px;
     
 }
 .column2{
-    flex: 2;
+    width: 49%;
 }
 .column3{
-    flex: 1;
+    width: 24%;
     padding: 10px;
+    margin-right: 150px;
 }
 
 .linkright ul li{
@@ -145,14 +154,16 @@ i{
 }
 /* footer */
 .footer{
+    display: flex;
     margin-top: 20px;
     width: 100%;
+    display: flex;
     background-color: #727272;
 }
 
 .left{
     margin-left: 150px;
-    flex: 2;
+    width: 74%;
 }
 .left ul li{
     display: inline-block;
@@ -163,8 +174,8 @@ i{
     align-items: center; 
 }
 .right{
-    flex: 1;
-    text-align: end;
+    width: 24%;
+    text-align: right;
     margin-right: 150px;
     padding-top: 10px;
 }
@@ -182,31 +193,70 @@ h5 a{
     color: red;
 }
 
-@media(min-width: 768px){
+@media(max-width: 768px){
     header{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: flex-start;
-    } 
-    
+        display: block;
+   }
+
+   .login{
+       width: 100%;
+       margin-left: 0;
+   }
+
+   .search{
+       width: 100%;
+       text-align: center;
+   }
+   .login{
+       width: 100%;
+       margin-right: 0;
+       text-align: center;
+   }
+
     .bar{
-        display: flex;
-        padding: 20px;
-        flex-wrap: wrap;
-        align-items: flex-start;
-    }
-    
-    .main{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: flex-start;
+        display: block;
     }
 
-    .footer{
-        display: flex;
+    .nav{
+        width: 100%;
+        margin-left: 0;
     }
+    .request{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .main{
+        display: block;
+    }
+
+    .column1{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .column2{
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+    }
+    .column3{
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .footer{
+        display: block;
+    }
+    .left{
+        width: 100%;
+        margin-left: 0;
+    }
+    .right{
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+    
 }
 
 /* tab */
