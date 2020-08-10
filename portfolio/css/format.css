@@ -1,0 +1,24 @@
+.assignment-rows{
+    font-family: 'Cormorant Upright', serif;
+}
+
+
+img{
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.assignment-rows a{
+    text-decoration: none;
+    color: #563D7C;
+}
+
+.assignment-rows a:hover{
+    color:black;
+}
+
+.assignment-rows p{
+    font-weight: 500;
+    text-align: justify;
+    font-size: 1.5em;
+}

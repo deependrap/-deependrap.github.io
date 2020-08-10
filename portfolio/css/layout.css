@@ -1,0 +1,19 @@
+.container_header{
+    background-color: #FFD453;
+}
+
+.container_left-side{
+    background-color:#F2F5F7;
+    height: 600px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.assignment-rows{
+    margin-top: 15px;
+    background-color:#F2F5F7;
+    padding: 15px;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
