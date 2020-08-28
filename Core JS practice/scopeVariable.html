@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function show() {
+            var j = "J a local variable of outer function";
+            document.write(j + "<br>");            
+
+            function innerFun() {
+                var k = "K a local variable of inner function";
+                document.write(k + "<br>");
+                document.write(j + "<br>");
+            }
+            innerFun();
+            document.write(k + "<br>"); //not accessible inside variable
+        }
+        show();
+    </script>
+</body>
+</html>

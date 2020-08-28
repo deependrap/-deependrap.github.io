@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<br><br><br>===== indexOf() Method===<br>");
+        var geek = ["Rahul", "Sonam", "Sumit", "Raj", 35, "Sonam"];
+        var position = geek.indexOf("Sonam");
+        document.write(position + "<br>"); 
+        var new_position = geek.indexOf("Sonam", 2); //finding Start from index to
+        document.write(new_position +"<br>"); 
+
+        document.write("<br><br><br>===== Fill() Method===<br><br>");
+        var geek = ["Rahul", "Sonam", "Raj", "Sumit"];
+        geek.fill("Done"); //fills all 
+        document.write(geek + "<br><br>");
+
+        var geeky = ["Rahul", "Sonam", "Raj", "Sumit"];
+        geeky.fill("Done", 1, 3); //fills start from 2 
+        document.write(geeky +"<br><br>");
+
+        //by using construtor
+        var new_array = new Array(3).fill("deependra");
+        document.write(new_array);
+
+    </script>
+</body> 
+</html>

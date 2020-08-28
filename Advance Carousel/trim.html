@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<br>=====Trim Method====<br>");
+        var str = "      Hello Geekyshows    ";
+        document.write(str);
+        console.log(str.trim());
+
+        document.write("<br><br>=====toUpperCase() Method====<br>");
+        document.write(str.toUpperCase());
+
+        document.write("<br><br>=====toLowerCase() Method====<br>");
+        document.write(str.toLowerCase());
+
+        document.write("<br><br>=====split() Method====<br>");
+        var strng = "Hello Mr Deependra Chaudhary";
+        document.write(strng.split(" "));// splits accordng to space
+        console.log(strng.split(" ")); //converts as array
+
+        document.write("<br><br>=====split() Method====<br>");
+        var strng = "Hello&Mr&Deependra&Chaudhary";
+        document.write(strng.split("&") +"<br>");//split according to &
+        var arr = strng.split("&"); //store as array
+        document.write(arr[2]); //displaying
+
+    </script>
+</body>
+</html>

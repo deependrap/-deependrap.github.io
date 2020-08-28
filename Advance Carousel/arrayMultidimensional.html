@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    document.write("===MultiDimensional Array===<br>");
+
+    // Defining by using literal
+      /*var geek = [
+          ["Rahul", "Dell", 10],
+          ["Sonam", "HP", 20],
+          ["Sumit", "Zed", 30]
+      ];*/
+
+      //Defining by using Constructor
+    var geek = new Array(
+        ["Rahul", "Dell", 10],
+        ["Sonam", "HP", 20],
+        ["Sumit", "Zed", 30]
+    );
+
+    //Displaying
+      for (let i = 0; i < 3; i++) {
+          for (let j = 0; j < 3; j++) {
+            //   document.write(geek[i][j] + " ");
+
+              document.write(i +""+ j + "|"); //Displaying Index of Elements             
+          }
+          document.write("<br>");          
+      }
+
+    </script>
+</body>
+</html>

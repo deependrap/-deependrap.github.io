@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var geek = []; //array declaration
+        geek[0] = "rahul"; //initialization
+        geek[1] = "ram";
+        geek[2] = 35;
+        geek[3] = "jay";
+        document.write(geek[1] +"<br>");
+
+
+        // declaration and initialization
+        var geek = ["rahul", "ram", 35, "jay"];
+        document.write(geek[3]);
+
+
+        document.write("<br>================<br>");
+        var a = "rahul", b = "ram", c = 35, d = "jay";
+        var geek = [a, b, c, d];
+        document.write(a);
+
+        document.write("<br>================<br>");
+
+        var geek = new Array();
+        geek[0] = "rahul";
+        geek[1] = "ram";
+        document.write(geek);
+        document.write("<br>================<br>");
+
+
+        var geek = new Array("rahul", "ram");
+        document.write(geek);
+
+
+        document.write("<br>=====Modifying Array Element===========<br>");
+
+        var geek = ["Rahul", "Ram", 35, "Jay"];
+        document.write(geek + "<br>");
+        geek[0] = "Deependra";
+        document.write(geek + "<br>");
+
+
+        document.write("<br>=====Removing Array Element===========<br>");
+        var geek = ["Rahul", "Ram", 35, "Jay"];
+        document.write(geek + "<br>");
+        delete geek[0]; //only delete value but same in length
+        document.write(geek + "<br>");
+        document.write(geek[0] + "<br>");
+        document.write(geek.length + "<br>");
+
+
+        document.write("<br>=====Length Property===========<br>");
+        var geek = ["Rahul", "Ram", 35, "Jay"];
+        document.write(geek + "<br>");
+        document.write("length of Array " + geek.length + "<br>");
+
+
+
+
+    </script>
+</body>
+</html>

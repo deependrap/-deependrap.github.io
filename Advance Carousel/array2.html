@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Iterationof Array using for loop in JS <br>");
+        var geek = ["Rahul", "Ram", 56, "Jay"];
+        for (let i = 0; i < geek.length; i++) {
+            document.write(i +" "+ geek[i] +"<br>");             
+        }
+
+        document.write("<br>===forEach loop in JS===<br>");
+        var geek = ["Rahul", "Ram", 56, "Jay"];
+        geek.forEach(function (value, index) {
+           document.write(index + " " + value +"<br>");
+        });
+         
+        document.write("<br>===for of loop in JS===<br>");
+        var geek = ["Rahul", "Ram", 56, "Jay"];
+        for (let value of geek) {
+            document.write(value + "<br>");
+            
+        }
+
+    </script>
+</body>
+</html>

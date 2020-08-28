@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var rows = 4;
+        var cols = 3;
+        var geek = new Array(rows);
+        for (let i = 0; i < rows; i++) {
+            geek[i] = new Array(cols);        
+        }
+
+        //Input for Array
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                geek[i][j] = prompt("Enter Name: "); 
+        }
+            document.write("<br>");           
+            
+        }
+        
+        //Displaying 
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                document.write(geek[i][j] +" | "); 
+        }
+            document.write("<br>");           
+            
+        }
+    </script>
+</body>
+</html>

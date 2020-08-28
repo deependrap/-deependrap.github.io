@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("===Array.isArray() Method===<br>");
+        var geek = ["Rahul", "Sonam", "Sumit", "Raj"];
+        var result1 = Array.isArray(["Sonam","Raj"]);
+        document. write(result1 + "<br>");
+
+        var result2 = Array.isArray("IamDeependra");
+        document. write(result2 + "<br>");
+
+        var result3 = Array.isArray(geek);
+        document. write(result3);
+
+
+
+        document.write("<br><br><br>===== Splice Method===<br>");
+        var geek = ["Rahul", "Sonam", "Sumit", "Raj"];
+        geek.splice(2); //remove all after index 2
+        document.write(geek + "<br>");
+
+        var geek = ["Rahul", "Sonam", "Sumit", "Raj"];
+        geek.splice(2,1); //Removing Only one after index 2
+        document.write(geek +"<br>");
+
+        var geek = ["Rahul", "Sonam", "Sumit", "Raj", "Rohan"];
+        geek.splice(2, 0, "Dell"); //Insert Dell
+        document.write(geek +"<br>");
+
+        var geek = ["Rahul", "Sonam", "Sumit", "Raj", "Rohan"];
+        geek.splice(2, 3, "Dell", "HP"); //Insert and Deleting together
+        document.write(geek +"<br>");
+
+    </script>
+</body>
+</html>

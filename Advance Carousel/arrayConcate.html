@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    document.write("===Concate three array===<br>");
+    var geek = ["Rahul", "Sonam"];
+    var show = ["Raj", "Roshan"];
+    var tutorial = ["Deependra"]
+    var geekshow = geek.concat(show, tutorial);
+    document.write(geekshow);
+
+
+    document.write("===<br><br><br>Join Method===<br>");
+    var geek = ["Rahul", "Sonam", "Sumit"];
+    var new_geek1 = geek.join(" / ");
+    var new_geek2 = geek.join(" or ");
+    var new_geek3 = geek.join(" and ");
+    document.write(new_geek1 + "<br>");
+    document.write(new_geek2 + "<br>");
+    document.write(new_geek3 + "<br>");
+    document.write(geek +"<br>");
+
+    document.write(typeof(new_geek1)); //string
+
+
+document.write("===<br><br><br>Reverse Method===<br>");
+var geek_reverse = geek.reverse();
+document.write(geek_reverse);
+
+
+document.write("===<br><br><br>Slice Method===<br>");
+var geek = ["Rahul", "Raj", "Sonam", "Rahul"];
+var slice_geek = geek.slice(1, 3);
+document.write(slice_geek);
+    
+    </script>
+</body>
+</html>

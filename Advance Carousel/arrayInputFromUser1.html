@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //FIXED LENGTH ARRAY
+//Defining Array
+var geek = new Array(3); //fixed length 3
+var ln = geek.length;
+
+//input
+for (let i = 0; i <= ln; i++) {
+    geek[i] = prompt("Enter Name: ");            
+}
+
+//Display values 
+for (let i = 0; i <= ln; i++) {
+    document.write(geek[i] +"<br>");            
+}
+
+document.write("<br>");
+// OR
+// Display values by using for of loop
+for (value of geek){
+    document.write(value +"<br>");
+}
+
+document.write("<br>");
+// OR
+// Display values by using forEach  loop
+geek.forEach(function(value, index){
+    document.write(index +" "+ value +"<br>");
+});
+
+    </script>
+</body>
+</html>

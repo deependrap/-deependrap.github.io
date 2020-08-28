@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Completed</title>
+</head>
+<body>
+    <script>
+        var cars, arrLength, text, i;
+
+        cars = ["Hyundai", "volvo", "marcedes", "tata"];
+        arrLength = cars.length;
+        // text = "<table>"
+        text += "<table><tr>";
+
+        for (i = 0; i < arrLength; i++) {
+           text += "<td>" + cars[i] + "</td>";           
+        } 
+        
+        text += "</tr><table>";
+        // text = "</table>";
+
+        document.write(text);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("=== 2D Array ===<br>");
+        //using array literal
+        /*
+        var geek = [
+            [],
+            [],
+            []
+        ];
+        */
+
+        //using constructor
+        /*
+        var geek = new Array(
+            [],
+            [],
+            []
+        );
+        */
+
+        //Defining by using for loop
+        var geek = [];
+        var rows = 4;
+        var cols = 3;
+        for (let i = 0; i < rows; i++) {
+            geek[i] = [];        
+        }
+
+        //Displaying 
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                // document.write(geek[i][j] +" | ");
+                document.write(i + " "+ j + " | ");  
+        }
+            document.write("<br>");           
+            
+        }
+    </script>
+</body>
+</html>
