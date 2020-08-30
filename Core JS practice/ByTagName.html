@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="geek">
+        <span>Geekyshows</span>
+        <em>World</em>
+        <span>Youtube</span>
+    </p>
+
+    <div>
+        <p>1st p inside div</p>
+        <p>2nd p inside div</p>
+    </div>
+
+    <script>
+        var result = document.getElementById("geek").getElementsByTagName("span");
+        document.write(result);
+        console.log(result);
+
+        //loop
+        var len = document.getElementsByTagName("p").length;
+        for (let i = 0; i < len; i++) {
+            var result = document.getElementsByTagName("p")[i];
+            document.write(result);
+            console.log(result);            
+        }
+
+    </script>
+</body>
+</html>

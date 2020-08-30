@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform" id="myformid">
+        User Name: <input type="text" name="m_username_field" id="unameid"><br><br>
+        Password: <input type="password" name="m_password_field" id="passid"><br><br>
+        <input type="submit" name="m_sbtn" value="Submit" id="sid"><br><br>
+    </form>
+
+    <script>
+    document.getElementById("username_id");
+    document.myform.elements[0];
+    document.myform.elements["m_username_field"];
+    document.myform.m_username_field;
+    var username = document.myform.unameid;
+    console.log(username);
+    console.log(username.name);
+    console.log(username.type);
+    console.log(username.id);
+
+    username.value = "Deepedra";
+    </script>
+    
+</body>
+</html>

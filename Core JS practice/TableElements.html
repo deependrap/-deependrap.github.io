@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableElements</title>
+</head>
+<body>
+    <table border="1" id="mytab">
+        <caption>My Table Caption</caption>
+        <tHead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+            </tr>
+        </tHead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>Rahul</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Deependra</td>
+                <td>Html css</td>
+            </tr>
+        </tbody>
+        <tFoot>
+            <tr>
+                <td>13</td>
+                <td>Ram</td>
+                <td>java</td>
+            </tr>
+        </tFoot>
+    </table>
+
+    <script>
+        var table = document.getElementById("mytab");
+        var Caption = table.caption;
+        // Caption.innerHTML = "My new Caption";
+
+        var thed = table.tHead;
+        // thed.innerHTML = "<tr><td>No. </td><td>Studen</td><td>Koras</td></tr>";
+
+        // tFoot and tBodies same like caption and tHead.
+
+    </script>
+</body>
+</html>

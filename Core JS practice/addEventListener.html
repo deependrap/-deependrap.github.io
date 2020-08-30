@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myBtn">BUTTON</button>
+    <p id="myp"></p>
+    <p id="demo"></p>
+    <script>
+        var x = document.getElementById("myBtn");
+        var y = document.getElementById("myp");
+        x.addEventListener("mouseover", myfunction);
+        x.addEventListener("click", myfunction1);
+        x.addEventListener("mouseout", myfunction2);
+
+        function myfunction() {
+            y.innerHTML += "mouse is over <br>";
+        }
+        function myfunction1() {
+            y.innerHTML += "mouse is clicked <br>";
+        }
+        function myfunction2() {
+            y.innerHTML += "mouse is out <br>";
+        }
+
+        // Add an Event Handler to the window Object
+        window.addEventListener("resize", function () {
+
+            // document.getElementById("demo").innerHTML = Math.random(); 
+            document.getElementById("demo").innerHTML = "Browser is resizing";           
+        });
+    </script>
+</body>
+</html>

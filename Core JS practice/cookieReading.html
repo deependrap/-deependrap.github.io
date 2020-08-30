@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform" method="POST">
+        Name: <input type="text" name="name"><br><br>
+        Email: <input type="email" name="email"><br><br>
+        Language: <input type="text" name="lang"><br><br>
+        <input type="button" value="Set Cookie" name="set" onclick="setCookie()">
+        <input type="button" value="Get Cookie" name="get" onclick="getCookie()">
+    </form>
+
+    <script>
+        function setCookie(){
+            document.cookie = "name=" + document.myform.name.value + "; max-age" + 60*60*24*10;
+            document.cookie = "email=" + document.myform.email.value + "; max-age" + 60*60*24*10;
+            document.cookie = "language=" + document.myform.lang.value + "; max-age" + 60*60*24*10;
+        }
+
+        function getCookie(){
+            var cookiesArray = document.cookie.split(";");
+            // alert(cookiesArray);
+            for (let i = 0; i < cookiesArray.length; i++) {
+               var valueArray = cookiesArray[i].split("=");
+               console.log(valueArray); 
+                if (valueArray[0].trim() == 'name') {
+                    document.myform.name.value = valueArray[1];
+                }
+                else if (valueArray[0].trim() == 'email') {
+                    document.myform.email.value = valueArray[1];
+                }
+                else if (valueArray[0].trim() == 'language') {
+                    document.myform.lang.value = valueArray[1];
+                } 
+            }
+            
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="myh2" class="myclass" title="somedata">Hello Geeky shows</h2>
+    <p id="myp" class="myclass">Paragraph</p>
+    <script>
+        // Attribute Property
+        var h = document.getElementById("myh2");
+        console.log(h.attributes);
+        console.log(h.attributes[0]);
+
+        // setAttribute and setAttribute Property
+        var p = document.getElementById("myp");
+        p.setAttribute('class', 'myclassgeekyshows');
+        p.setAttribute('title', 'mytitle');
+        p.style.color = 'red';
+        var getAt = p.getAttribute('id');
+        console.log(p);
+        console.log(getAt);
+
+        // hasAttribute and removeAtrribute
+        p.removeAttribute("id");
+
+    </script>
+</body>
+</html>
