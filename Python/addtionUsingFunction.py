@@ -4,4 +4,3 @@ def add():
     c=a+b
     print("Addition= ", c)
 add()
-

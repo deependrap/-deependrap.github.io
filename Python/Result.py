@@ -8,20 +8,13 @@ total = eng+nep+math+sci+health
 percent = (total*100)/500
 
 if percent>80:
-    print("Congratulation! You are passed. Total Marks obtained:", total)
-    print("Percentage", percent)
-    print("Grade: A")
+    print("Congratulation! You are passed. Total Marks obtained:", total, "Percentage", percent, "Grade: A")
 elif percent>=60:
-        print("Congratulation! You are passed. Total Marks obtained:", total)
-        print("Percentage", percent)
-        print("Grade: B")
+        print("Congratulation! You are passed. Total Marks obtained:", total, "Percentage", percent, "Grade: B")
 elif percent>=40:
-        print("Congratulation! You are passed. Total Marks obtained:", total)
-        print("Percentage", percent)
-        print("Grade: C")
+        print("Congratulation! You are passed. Total Marks obtained:", total, "Percentage", percent, "Grade: C")
 else:
-    print("Sorry! You are failed. Total Marks obtained:", total)
-    print("Percentage", percent)
-    print("Grade: C")
+    print("Sorry! You are failed. Total Marks obtained:", total, "Percentage", percent, "Grade: C")
+
         
 

@@ -7,3 +7,4 @@ index = int(input("Enter Index to Change: "))
 value = input("Enter the value of Index: ")
 a.insert(index,value)
 print("After Change: ", a)
+

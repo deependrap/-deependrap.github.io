@@ -13,3 +13,4 @@ while i<=n:
     print()
     k=k+2
     i=i+1
+    

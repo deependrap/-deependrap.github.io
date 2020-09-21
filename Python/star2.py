@@ -12,3 +12,4 @@ while i<=5:
     k=k+2
     print()
     i=i+1
+    
